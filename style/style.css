@@ -1,0 +1,102 @@
+@font-face{
+font-family: LatoM;
+src: url('../fonts/Lato-Medium.ttf');
+font-weight: normal;
+font-style: normal;
+}
+
+body{
+    padding : 0;
+    margin: 0;
+    dont-family: sans-serif;
+}
+
+header {
+    background: url(../img/Header_BG.jpg) no-repeat center top / cover ;
+    height: 944px;
+    color: white;
+}
+
+div {
+    box-sizing:border-box;
+}
+
+nav{
+    float: right;
+}
+
+.clearfix:after{
+    content: "";
+    display: table;
+    width: 100%;
+    clear: both;
+}
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.logo{
+    margin-top: 25px;
+    float:left;
+}
+
+.navi {
+    padding: 0;
+    margin: 0;
+    display: block;
+    margin-top: 32px;
+}
+
+
+
+.navi li {
+    float: left;
+    display: block;
+    margin-right: 69px;
+}
+
+li.no_mr{
+    margin-right: 0px;
+}
+
+.navi li a{
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+}
+
+h1{
+    font-family: "Myriad Pro";
+    font-weight: bold;
+    font-size: 72px;
+    margin: 0;
+    padding: 0;
+}
+
+.title{
+    text-align: center;
+    margin-top: 348px;
+}
+
+.title_text{
+    font-family: Georgia;
+    font-size: 32px;
+    font-style: italic;
+    margin: 0;
+    padding: 0;
+}
+
+.top{
+    padding-bottom: 38px;
+    border-bottom: 1px solid;
+    border-color: rgba(255,255,255,0.3);
+}
+/* p.test{
+    font-family: 'LatoM';
+    font-weight: normal;
+    font-style: normal;
+    color: white;
+    background-color:red;
+} */
