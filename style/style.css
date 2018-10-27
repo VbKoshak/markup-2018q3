@@ -8,7 +8,7 @@ font-style: normal;
 body{
     padding : 0;
     margin: 0;
-    dont-family: sans-serif;
+    font-family: sans-serif;
 }
 
 header {
@@ -44,17 +44,23 @@ nav{
 
 .navi {
     padding: 0;
+
     margin: 0;
     display: block;
     margin-top: 32px;
 }
 
-
-
 .navi li {
     float: left;
     display: block;
     margin-right: 69px;
+    padding-bottom: 42px;
+    border-bottom: 1px solid;
+    border-color: rgba(255,255,255,0);
+}
+
+.navi li:hover{
+    border-color: rgba(255,255,255,1);
 }
 
 li.no_mr{
@@ -64,7 +70,7 @@ li.no_mr{
 .navi li a{
     text-decoration: none;
     font-size: 16px;
-    color: white;
+    color: #c6c5c6;
 }
 
 h1{
@@ -77,7 +83,7 @@ h1{
 
 .title{
     text-align: center;
-    margin-top: 348px;
+    margin-top: 347px;
 }
 
 .title_text{
@@ -89,9 +95,9 @@ h1{
 }
 
 .top{
-    padding-bottom: 38px;
+    /*padding-bottom: 38px;*/
     border-bottom: 1px solid;
-    border-color: rgba(255,255,255,0.3);
+    border-color: rgba(255,255,255,0.2);
 }
 /* p.test{
     font-family: 'LatoM';
