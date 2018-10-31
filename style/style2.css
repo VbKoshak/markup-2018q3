@@ -1,0 +1,111 @@
+* {
+    /* border: 2px solid red; */
+    padding: 0;
+    margin:0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    color: white;
+}
+
+@font-face{
+font-family: LatoM;
+src: url('../fonts/Lato-Medium.ttf');
+font-weight: normal;
+font-style: normal;
+}
+
+.container{
+    width:75%;
+    margin:0 auto;
+}
+
+.flex
+{
+    display: flex;
+}
+
+.flex-column
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row
+{
+    display:flex;
+    flex-direction: row;
+}
+/* head */
+.head{
+    padding-top:32px;
+    padding-bottom: 29px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.logo{
+    margin-left: 4px;
+}
+
+.empty{
+    flex: 1 1 420px;
+    /* flex: 1; */
+}
+
+nav {
+    display:flex;
+    align-items: center;
+}
+
+nav ul{
+    width: 633px;
+    justify-content:space-between;
+    flex: 1;
+    align-items: center;
+}
+
+.menu li {
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu li a{
+    text-decoration: none;
+    font-family: LatoM;
+    font-size: 16px;
+    color: white;
+}
+/* title */
+
+.title{
+    height: 850px;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    font-family: "Myriad Pro";
+    font-weight: bold;
+    font-size: 72px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.title_text{
+    align-items: center;
+    justify-content: center;
+}
+
+.title_text div{
+    font-family: Georgia;
+    font-style: italic;
+    font-size: 32px;
+    line-height: 1.5em;
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+header{
+    background: url(../img/Header_BG.jpg) no-repeat center top / cover;
+    height: 960px;
+
+}
