@@ -126,10 +126,16 @@ nav {
 }
 
 .menu li {
-    width: 71px;
+    /* width: 71px; */
     height: 100%;
     display: flex;
     justify-content: space-around;
+}
+
+@supports (-ms-ime-align:auto) {
+    .menu li  {
+        width: 100px;
+    }
 }
 
 .menu li a{
@@ -1004,7 +1010,8 @@ footer .menu{
 
 .map>div>div{
     height: 20%;
-    color: #686868
+    color: #686868;
+    white-space: nowrap;
 }
 
 .map div a{
