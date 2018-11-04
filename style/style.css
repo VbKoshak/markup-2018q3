@@ -4,6 +4,8 @@
     border-width:0px;
     font-family: sans-serif;
     box-sizing: border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box
 }
 
 @font-face{
@@ -124,6 +126,7 @@ nav {
 }
 
 .menu li {
+    width: 71px;
     height: 100%;
     display: flex;
     justify-content: space-around;
@@ -367,8 +370,6 @@ select#fld option:checked, select#fld option:not(:checked){
     white-space: nowrap;
 }
 
-
-
 .domaintable .row1 td{
     border-bottom: 1px solid #d9d9d9;
     margin-bottom: 0px;
@@ -509,6 +510,13 @@ select#fld option:checked, select#fld option:not(:checked){
 .payment div:first-child{
     padding-top:15%;
     padding-bottom: 2%;
+}
+
+@-moz-document url-prefix() {
+    .payment div:first-child{
+        padding-top:0px;
+        padding-bottom: 2%;
+    }
 }
 
 .payment div:last-child{
