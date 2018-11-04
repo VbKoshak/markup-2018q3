@@ -712,16 +712,103 @@ select#fld option:checked, select#fld option:not(:checked){
 }
 
 /* comments */
-.comments{
+/* .comments{
     height: 190px;
     background: url("../img/Comments_BG.png") no-repeat center top / contain;
+} */
+
+#slides {
+    position: relative;
+    height: 190px;
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+}
+
+.slide {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: inherit;
+    opacity: 0;
+    z-index: 1;
+
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+}
+
+.showing {
+    opacity: 1;
+    z-index: 2;
+}
+
+.slide{
+    height: 100%;
+}
+
+.slide>.flex-column{
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 70%;
+}
+
+.quote{
+    font-family: LatoL;
+    font-size: 20px;
+    color: #fff;
+    text-align:center;
+}
+
+.slidercontrol{
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.slidercontrol .status{
+    margin-top: 2%;
+    height: 100%;
+    width: 6%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.slidercontrol>.name{
+    margin-top:2%;
+    font-family: LatoM;
+    font-weight: bold;
+    font-size: 20px;
+    color: #fff;
+    border-right: 1px solid #fff;
+    width:18%;
+}
+
+.slidercontrol .status .point{
+    width:8px;
+    height:8px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+
+.slidercontrol .status .point.set{
+    background-color: #fff;
+}
+
+.slide:nth-of-type(1) {
+    background: url("../img/Comments_BG.png") no-repeat center top / cover;
+}
+.slide:nth-of-type(2) {
+    background: url("../img/Comments_BG_2.png") no-repeat center top / cover;
+}
+.slide:nth-of-type(3) {
+    background: url("../img/Comments_BG_3.png") no-repeat center top / cover;
 }
 
 /* function */
-
-.functions{
-    /* height: 340px; */
-}
 
 .functions>.flex-row{
     justify-content: space-between;
@@ -729,10 +816,10 @@ select#fld option:checked, select#fld option:not(:checked){
 }
 
 .funct{
+    width: 20%;
     padding:3% 0%;
     justify-content: center;
     align-items: center;
-    flex: 1;
     margin: 5% 0px;
 }
 
@@ -790,6 +877,7 @@ select#fld option:checked, select#fld option:not(:checked){
 
 footer{
     background-color: #2a2a2a;
+    padding-bottom: 3%;
 }
 
 .foot-top{
@@ -802,6 +890,11 @@ footer .logo{
     margin-bottom: 20px;
     margin-left: 0px;
     opacity: 0.4;
+    transition: 0.1s linear;
+}
+
+footer .logo:hover{
+    opacity: 0;
 }
 
 footer .menu li a{
@@ -812,10 +905,13 @@ footer .menu li a{
     padding-bottom:29px;
     padding-top: 32px;
     transition: 0.3s linear;
+    border-bottom-width: 0px;
 }
 
 footer .menu li a:hover{
     color: #fff;
+    font-size: 18px;
+    padding-top: 27px;
 }
 
 footer .menu{
@@ -824,10 +920,7 @@ footer .menu{
 
 .foot-line{
     justify-content: space-between;
-}
-
-.foot-line>div{
-    flex:1;
+    margin-top:3%;
 }
 
 .foot-line>div:first-child{
@@ -840,13 +933,96 @@ footer .menu{
     align-items: center;
 }
 
-.foot-line>div:last-child{
-    justify-content: center;
-    align-items: flex-start;
-}
-
 .license{
+    width: 31%;
     font-family: LatoL;
     font-size: 15px;
     font-color: #686868;
+    border-right: 1px solid #686868;
+    padding-right: 3%;
+}
+
+.license p{
+    line-height: 27px;
+    padding: 2%;
+    font-family: LatoL;
+    font-size: 15px;
+    color: #686868;
+    width: 100%;
+}
+
+.license p span{
+    font-family: LatoM;
+    font-weight: bold;
+}
+
+.map{
+    width: 42%;
+    justify-content: space-around;
+    align-items: center;
+    border-right: 1px solid #686868;
+}
+
+.map>div{
+    /* width:40%; */
+    justify-content: space-around;
+    align-items: flex-start;
+    height: 100%;
+    margin: 0 10%;
+}
+
+.map>div>div{
+    height: 20%;
+    color: #686868
+}
+
+.map div a{
+    width: 100%;
+    text-decoration: none;
+    font-family: LatoL;
+    font-size: 15px;
+    color: inherit;
+    /* padding: 2%; */
+}
+
+.map>div>div:hover{
+    color: #fff;
+    padding-left: 3%;
+    white-space: nowrap;
+}
+
+.contacts{
+    width: 27%;
+    color: #686868;
+    justify-content: space-around;
+    align-items: flex-start;
+    font-family: LatoL;
+    font-size: 15px;
+    padding-left: 3%;
+}
+
+.contacts a.flex {
+    text-decoration: none;
+    color: inherit;
+    height: 23%;
+    width: 100%;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+.contacts a.flex:hover{
+    color: #fff;
+    padding-left: 3%;
+}
+
+.contacts div{
+    color: inherit;
+    height: 23%;
+    width: 100%;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+.contacts i{
+    padding-right: 10px;
 }
