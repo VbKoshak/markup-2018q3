@@ -4,69 +4,447 @@
     <meta charset="UTF-8">
     <title>GhostHost</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400" rel="stylesheet">
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
     <header>
         <div class="container">
-            <div class="top clearfix">
-                <img src="img/Logo.png" alt="GhostHost" class="logo">
+            <div class = "head flex-row">
+                <img src="img/logo.png" alt="logoThere" class = "logo">
+                <div class="empty"></div>
                 <nav>
-                    <ul class = "navi">
+                    <ul class = "menu flex-row">
                         <li><a href="#">Home</a></li>
                         <li><a href="#">Domain</a></li>
                         <li><a href="#">Hosting</a></li>
                         <li><a href="#">Clients</a></li>
                         <li><a href="#">Blog</a></li>
-                        <li class = "no_mr"><a href="#" >Support</a></li>
+                        <li><a href="#">Support</a></li>
                     </ul>
                 </nav>
             </div>
-            <div class="title">
-                <h1>
-                    HELLO!
-                </h1>
-                <div class="title_text">
+            <div class = "title flex-column">
+
+                <div class = "flex">
+                    <h1>
+                        HELLO!
+                    </h1>
+                </div>
+                <div class="title_text flex-column">
                     <div>We love our work...</div>
                     <div>And We're taking it seriously...</div>
                 </div>
             </div>
         </div>
+        <div class="registerrow flex-row">
+            <div class="space-left"></div>
+            <div class="login flex">
+                <a href="#">Login</a>
+            </div>
+            <div class = "register flex">
+                <a href="#">Register</a>
+            </div>
+            <div class="space-right"></div>
+        </div>
     </header>
-    <section>
-        <div class="container">
+    <section class="Domain">
+        <div class="container2 flex-column">
+            <div class="domainText flex-column">
+                <h2 class = "flex">
+                    Would you like to buy a new domain ?
+                </h2>
+                <p class = "flex">
+                    Lorem ipsum dolor sit amet, consectetur dipiscing elit. Suspendisse auctor mauris ac nulla interdum, id molestier.
+                </p>
+            </div>
+            <div class="domainName flex-row">
+                <div class="thirdlevel flex">
+                    <input type="text" id="tld" name="DomainThirdLevel" placeholder="www.">
+                </div>
+                <div class="secondlevel flex">
+                    <input type="text" id="sld" name="DomainSecondLevel" placeholder="What do you want?">
+                </div>
+                <div class="firstlevel flex">
+                    <select class="firstlevelselect" name="DomainFirstLevel" id="fld">
+                        <option value="com">.com</option>
+                        <option value="net">.net</option>
+                    </select>
+                </div>
+            </div>
+            <div class="domaintable">
+                <table class = "flex-column">
+                    <tr class = "flex-row row1">
+                        <td class = "flex">.COM</td>
+                        <td class = "flex">1 Year</td>
+                        <td class = "flex">$9.00 USD</td>
+                        <td class = "flex">Transfer Price No</td>
+                    </tr>
+                    <tr class = "flex-row row2">
+                        <td class = "flex">.NET</td>
+                        <td class = "flex">1 Year</td>
+                        <td class = "flex">$9.00 USD</td>
+                        <td class = "flex">Transfer Price No</td>
+                    </tr>
+                </table>
+            </div>
+    </section>
+    <section class="Packages">
+        <div class="container flex">
+            <div class="packageContainer flex-row">
+                <div class="package1 flex-column">
+                    <div class="sign flex-column">
+                        <div class="flex"><i class="fas fa-anchor"></i></div>
+                        <div class="flex">BASIC PACKAGE</div>
+                    </div>
+                    <div class="info">
+                        <table>
+                            <tr>
+                                <td>Disk Space (GB)</td>
+                                <td>50</td>
+                            </tr>
+                            <tr>
+                                <td>Subdomains</td>
+                                <td>50</td>
+                            </tr>
+                            <tr>
+                                <td>Transfer (GB)</td>
+                                <td>50</td>
+                            </tr>
+                            <tr>
+                                <td>Data bases</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>Dashboards</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>Control Panel & FTP</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Free Support</td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="payment flex-column">
+                        <div> <sup>$</sup><span>15</span><sub>/Mo</sub> </div>
+                        <div><a href="#">SELECT PLAN</a></div>
+                    </div>
+                </div>
+                <div class="package2 flex-column">
+                    <div class="sign flex-column">
+                        <div class="flex"><i class="fas fa-star-half-alt"></i></div>
+                        <div class="flex">NORMAL PACKAGE</div>
+                    </div>
+                    <div class="info">
+                        <table>
+                            <tr>
+                                <td>Disk Space (GB)</td>
+                                <td>100</td>
+                            </tr>
+                            <tr>
+                                <td>Subdomains</td>
+                                <td>100</td>
+                            </tr>
+                            <tr>
+                                <td>Transfer (GB)</td>
+                                <td>100</td>
+                            </tr>
+                            <tr>
+                                <td>Data bases</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>Dashboards</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>Control Panel & FTP</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Free Support</td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="payment flex-column">
+                        <div> <sup>$</sup><span>30</span><sub>/Mo</sub> </div>
+                        <div><a href="#">SELECT PLAN</a></div>
+                    </div>
+                </div>
+                <div class="package3 flex-column">
+                    <div class="sign flex-column">
+                        <div class="flex"><i class="fas fa-star"></i></div>
+                        <div class="flex">BIG PACKAGE</div>
+                    </div>
+                    <div class="info">
+                        <table>
+                            <tr>
+                                <td>Disk Space (GB)</td>
+                                <td>150</td>
+                            </tr>
+                            <tr>
+                                <td>Subdomains</td>
+                                <td>150</td>
+                            </tr>
+                            <tr>
+                                <td>Transfer (GB)</td>
+                                <td>150</td>
+                            </tr>
+                            <tr>
+                                <td>Data bases</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>Dashboards</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>Control Panel & FTP</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Free Support</td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="payment flex-column">
+                        <div> <sup>$</sup><span>40</span><sub>/Mo</sub> </div>
+                        <div><a href="#">SELECT PLAN</a></div>
+                    </div>
+                </div>
+                <div class="package4 flex-column">
+                    <div class="sign flex-column">
+                        <div class="flex"><i class="far fa-gem"></i></div>
+                        <div class="flex">BIGGEST PACKAGE</div>
+                    </div>
+                    <div class="info">
+                        <table>
+                            <tr>
+                                <td>Disk Space (GB)</td>
+                                <td>250</td>
+                            </tr>
+                            <tr>
+                                <td>Subdomains</td>
+                                <td>250</td>
+                            </tr>
+                            <tr>
+                                <td>Transfer (GB)</td>
+                                <td>250</td>
+                            </tr>
+                            <tr>
+                                <td>Data bases</td>
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <td>Dashboards</td>
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <td>Control Panel & FTP</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Free Support</td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="payment flex-column">
+                        <div> <sup>$</sup><span>70</span><sub>/Mo</sub> </div>
+                        <div><a href="#">SELECT PLAN</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="AboutUs">
+        <div class="container flex-row">
+            <div class="AboutText flex-column">
+                <h3 class = "flex"><span>About</span>   <span> Us</span></h3>
+                <p class = "flex">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta eaque officia, asperiores quia, ipsa, placeat enim possimus omnis tenetur, nihil accusamus dolorem reiciendis consequuntur! Assumenda nesciunt iure minima, aut facere.
+                </p>
+            </div>
+            <div class="AboutPhotos flex-row">
+                <div class="workerCard flex-column w1">
+                    <div class="workerPhoto flex"></div>
+                    <div class="workerInfo flex-column">
+                        <div class="name flex">Johny Doe</div>
+                        <div class="position flex">Designer</div>
+                        <div class="links flex-row">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fas fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="workerCard flex-column w2">
+                    <div class="workerPhoto flex"></div>
+                    <div class="workerInfo flex-column">
+                        <div class="name flex">John Doe</div>
+                        <div class="position flex">Designer</div>
+                        <div class="links flex-row">
+                            <a href="#" class = "flex"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class = "flex"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class = "flex"><i class="fas fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="workerCard flex-column w3">
+                    <div class="workerPhoto flex"></div>
+                    <div class="workerInfo flex-column">
+                        <div class="name flex">Johnathan Doe</div>
+                        <div class="position flex">Designer</div>
+                        <div class="links flex-row">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fas fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class = "comments">
+        <ul id="slides">
+            <li class="slide showing">
+                <div class="container flex-column">
+                    <div class="quote flex">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere reprehenderit eveniet placeat fugiat aliquam iusto exercitationem. Repudiandae magnam et, quod.</div>
+                    <div class="slidercontrol flex-row">
+                        <div class="name">
+                            John Doe
+                        </div>
+                        <div class="status flex-row">
+                            <div href="" class="point set flex"></div>
+                            <div href="" class="point flex"></div>
+                            <div href="" class="point flex"></div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="slide">
+                <div class="container flex-column">
+                    <div class="quote flex">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae modi excepturi, vel enim sint exercitationem deserunt ipsa aspernatur reprehenderit cum.
+                    </div>
+                    <div class="slidercontrol flex-row">
+                        <div class="name">
+                            Johny Doe
+                        </div>
+                        <div class="status flex-row">
+                            <div href="" class="point flex"></div>
+                            <div href="" class="point set flex"></div>
+                            <div href="" class="point flex"></div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="slide">
+                <div class="container flex-column">
+                    <div class="quote flex">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione autem possimus magnam et, officiis velit, quaerat. Repudiandae aperiam veniam similique.</div>
+                    <div class="slidercontrol flex-row">
+                        <div class="name">
+                            Johnathan Doe
+                        </div>
+                        <div class="status flex-row">
+                            <div href="" class="point flex"></div>
+                            <div href="" class="point flex"></div>
+                            <div href="" class="point set flex"></div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <div>
 
         </div>
     </section>
-    <section>
-        <div class="container">
-
-        </div>
-    </section>
-    <section>
-        <div class="container">
-
-        </div>
-    </section>
-    <section>
-        <div class="container">
-
-        </div>
-    </section>
-    <section>
-        <div class="container">
-
-        </div>
-    </section>
-    <section>
-        <div class="container">
-
+    <section class = "functions">
+        <div class="container flex-row">
+            <div class="funct flex-column">
+                <a href = "#" class="icon flex"><i class="fas fa-bolt fa-2x"></i></a>
+                <div class="text flex-column">
+                    <h4>Fast Servers</h4>
+                    <p>Nulla dapibus neque augue, quis
+                    tincidunt tortor aliquam vitae.</p>
+                </div>
+            </div>
+            <div class="funct flex-column">
+                <a href = "#" class="icon flex"><i class="fas fa-cloud fa-2x"></i></a>
+                <div class="text flex-column">
+                    <h4>Cloud Servers</h4>
+                    <p>Nulla dapibus neque augue, quis
+                        tincidunt tortor aliquam vitae.</p>
+                </div>
+            </div>
+            <div class="funct flex-column">
+                <a href = "#" class="icon flex"><i class="fas fa-arrows-alt fa-2x"></i></a>
+                <div class="text flex-column">
+                    <h4>Domain Transfer</h4>
+                    <p>Nulla dapibus neque augue, quis
+                        tincidunt tortor aliquam vitae.</p>
+                </div>
+            </div>
+            <div class="funct flex-column">
+                <a href = "#" class="icon flex"><i class="fas fa-comments fa-2x"></i></a>
+                <div class="text flex-column">
+                    <h4>Live Support</h4>
+                    <p>Nulla dapibus neque augue, quis
+                        tincidunt tortor aliquam vitae.</p>
+                </div>
+            </div>
         </div>
     </section>
     <footer>
         <div class="container">
-
+            <div class = "foot-top flex-row">
+                <img src="img/logo.png" alt="logoThere" class = "logo">
+                <div class="empty"></div>
+                <nav>
+                    <ul class = "menu flex-row">
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">ABOUT US</a></li>
+                        <li><a href="#">BLOG</a></li>
+                        <li><a href="#">POLICY</a></li>
+                        <li><a href="#">CONTACT</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="foot-line flex-row">
+                <div class="flex-column license">
+                    <p>Lorem ipsum dolor sit amet, consecteteeseurı
+                        adipiscing elit. Donec mollis commodoeesene
+                        que, non commodo risus volutpat vel.</p>
+                    <p>Design by <span>Mert Can Eyriyer</span>.</p>
+                </div>
+                <div class="flex-row map">
+                    <div class="flex-column">
+                        <div><i class="fas fa-angle-right"></i><a href="#">Support</a></div>
+                        <div><i class="fas fa-angle-right"></i><a href="#">Account</a></div>
+                        <div><i class="fas fa-angle-right"></i><a href="#">Product Catalog</a></div>
+                        <div><i class="fas fa-angle-right"></i><a href="#">Shortcodes</a></div>
+                    </div>
+                    <div class="flex-column">
+                        <div><i class="fas fa-angle-right"></i><a href="#">Site Map</div>
+                        <div><i class="fas fa-angle-right"></i><a href="#">Whois Search</div>
+                        <div><i class="fas fa-angle-right"></i><a href="#">Web Mail</div>
+                        <div><i class="fas fa-angle-right"></i><a href="#">Find Domain</div>
+                    </div>
+                </div>
+                <div class="flex-column contacts">
+                    <a class = "flex" href="tel:000000000000"><i class="fas fa-phone"></i>0000-0000-0000</a>
+                    <a class = "flex" href="mailto:nformationteam@ghosthost.com"><i class="fas fa-envelope"></i>informationteam@ghosthost.com</a>
+                    <div class = "flex">Lorem Ipsum Street, Lorem Avenue,</div>
+                    <div class = "flex">Lorem Ipsum </div>
+                </div>
+            </div>
         </div>
     </footer>
+    <script src = "script/script.js"></script>
 </body>
 </html>
